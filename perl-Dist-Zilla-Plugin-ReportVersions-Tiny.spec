@@ -1,9 +1,9 @@
 %define upstream_name    Dist-Zilla-Plugin-ReportVersions-Tiny
-%define upstream_version 1.02
+%define upstream_version 1.10
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Reports dependency versions during testing
 License:	GPL+ or Artistic
@@ -54,4 +54,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc META.yml META.json LICENSE README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
+
 
