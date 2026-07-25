@@ -1,15 +1,15 @@
 %define upstream_name    Dist-Zilla-Plugin-ReportVersions-Tiny
-%define upstream_version 1.10
+%define upstream_version 1.12
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Reports dependency versions during testing
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Dist/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/dolmen/p5-Dist-Zilla-Plugin-ReportVersions-Tiny
+Source0:	https://cpan.metacpan.org/authors/id/D/DO/DOLMEN/Dist-Zilla-Plugin-ReportVersions-Tiny-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
