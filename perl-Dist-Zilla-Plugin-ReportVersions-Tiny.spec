@@ -1,15 +1,13 @@
 %define upstream_name    Dist-Zilla-Plugin-ReportVersions-Tiny
-%define upstream_version 1.12
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.12
+Release:	2
 
 Summary:	Reports dependency versions during testing
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/dolmen/p5-Dist-Zilla-Plugin-ReportVersions-Tiny
-Source0:	https://cpan.metacpan.org/authors/id/D/DO/DOLMEN/Dist-Zilla-Plugin-ReportVersions-Tiny-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DO/DOLMEN/Dist-Zilla-Plugin-ReportVersions-Tiny-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -41,7 +39,7 @@ able to reproduce problems that are dependent on a specific set of module
 versions.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
